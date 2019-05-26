@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zb-tjw.github.io</id>
-    <title>Gridea</title>
-    <updated>2019-05-26T15:54:07.979Z</updated>
+    <title>zb_tjw</title>
+    <updated>2019-05-26T16:00:39.675Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zb-tjw.github.io"/>
     <link rel="self" href="https://zb-tjw.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>脚踏实地、厚积薄发、广学精用</subtitle>
     <logo>https://zb-tjw.github.io/images/avatar.png</logo>
     <icon>https://zb-tjw.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2019, Gridea</rights>
+    <rights>All rights reserved 2019, zb_tjw</rights>
     <entry>
         <title type="html"><![CDATA[关于]]></title>
         <id>https://zb-tjw.github.io/post/关于</id>
         <link href="https://zb-tjw.github.io/post/关于">
         </link>
         <updated>2019-01-25T11:09:48.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="author-by-zb_tjw">Author By zb_tjw</h1>
-<h1 id="qq1549790231">QQ：1549790231</h1>
-]]></content>
     </entry>
 </feed>
