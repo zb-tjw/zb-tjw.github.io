@@ -155,7 +155,7 @@
           <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
               <figure class="animate-box">
                   
-                      <img src="https://zb-tjw.github.io/post-images/关于.jpg" alt="关于" class="img-responsive">
+                      <img src="https://zb-tjw.github.io/post-images/拖继文第三周周记.png" alt="拖继文第三周周记" class="img-responsive">
                   
               </figure>
               <span class="fh5co-meta animate-box">
@@ -164,27 +164,60 @@
                           
                               <a href="https://zb-tjw.github.io/tag/elP-jHh6N" class="tag">机器学习, </a>
                           
-                              <a href="https://zb-tjw.github.io/tag/kGn7n5ogV" class="tag">Android, </a>
-                          
                               <a href="https://zb-tjw.github.io/tag/kMdo9Yqa9" class="tag">学习笔记, </a>
                           
                       </div>
                   
               </span>
-              <h2 class="fh5co-article-title animate-box">关于</h2>
-              <span class="fh5co-meta fh5co-date animate-box">2019-01-25</span>
+              <h2 class="fh5co-article-title animate-box">拖继文第三周周记</h2>
+              <span class="fh5co-meta fh5co-date animate-box">2019-05-27</span>
 
               <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
                   <div class="row">
                       <div class="col-md-12 animate-box post-content">
-                          <p> <h1 id="author-by-zb_tjw">Author By zb_tjw</h1>
-<h1 id="qq1549790231">QQ：1549790231</h1>
+                          <p> <ol>
+<li>3.5.2节BP算法的问题中提到：深度结构（涉及多个非线性处理单元层）非凸目标函数中普标存在的局部最小是训练困难的主要来源
+a.	两个侧重点非凸目标函数、局部最小值，关于函数的问题，就是数学上的定义，分三类（凸函数，凹函数，非凸非凹函数）
+b.	最小值问题，不管在哪篇博客里，总会出现一句话：误差局面可能含有多个不同的局部极小值，梯度下降可能导致陷入局部最小值，书中在下一段也提到非凸目标函数导致求解陷入局部最优​​
+c.	另外关于sigmoid函数的凹凸性我感觉下边这个图比课本上的图看着舒服很多​​
+d.	在百度搜非凸目标函数，很多有关于凸优化和非凸优化的文章，里边除了目标函数为凸函数以外还提到了定义域为凸集的问题，感觉还看不到这么深，先记录一下[链接一]、[链接二]</li>
+<li>关于BP算法，书中只是提到反向传播，修正权值，但是会不会考虑这么一个问题：在讨论BP算法问题时突然提到了非凸目标函数的局部最小值问题，那么BP算法中使用的到底是哪个函数？，推荐一个写的很不错的文章[多层神经网络BP算法 原理及推导]</li>
+<li>关于BP算法存在的问题（3）中提到我们只能用有标签的数据来训练；大部分数据是没有标签的，那么这里所说的标签是怎样的标签？4.1.4节给出另一句话在有监督的学习方法里，我们给定了一组输入数据，给定了数据的答案，或者叫标签</li>
+<li>书中提到了SVN支持向量机，自己稍微了解了一下，几乎看不懂，就弄明白了一个词--超平面（如果一个线性函数能够将样本分开，称这些数据样本是线性可分的。那么什么是线性函数呢？其实很简单，在二维空间中就是一条直线，在三维空间中就是一个平面，以此类推，如果不考虑空间维数，这样的线性函数统称为超平面）[支持向量机（SVM）入门理解与推导]</li>
+<li>深度学习训练的具体过程（1）使用自下而上的非监督学习，但是可有标定数据，这里如果有了标定数据，那是否意味着就变成了监督学习？</li>
+<li>课本88页图的描述自下而上不应该是正向吗，为什么是反向监督学习，自顶向下的微调才是反向吧？</li>
+<li>课本91页提到：通常隐层中的神经元数目要比输入\输出层少，这是为了使神经网络只学习最重要的特征并实现特征的降维，关于降维书中接着讲了把4bit的信息用2bit表示，利用压缩方法使输入的数据降维，变成隐层的东西，这个我基本明白了，网上的降维方法很多，但是难度都比书上的难很多，另外关于这句话回想之前第二章的内容就会发现，关于神经元的数目问题，还有另外一句话（课本62页）：多层感知机起码具备一个隐层，但隐层的神经元数量是多少呢？这里有个大致的推理公式：2n+1，n是输入单元的个数，两句话字面意思都很好理解，但是放到一起去看，又该怎么去理解，按字面意思来的话明显是冲突的啊？</li>
+<li>4.1.1灰度图像中间有句话：每一个隐层就是特征的提取（反向提取特征），最上层，也就是输入层也是一种维度的特征，这不应该是正向吗？而且最上层不应该是输出层吗？</li>
+<li>课外的文章：[让Python代码运行更快的最佳方式]，可以自己去读，也可以看一下几点总结
+a.	PyPy是python的一种解释器，比标准的cPython快很多，不过并不支持所有cPython库
+b.	PyPy比python快的原因是有JIT（实时编译），可以动态编译
+c.	PyPy支持python2和python3，但是python2马上要被废弃，python3的话目前只支持3.5和3.6，目前最新是3.7，自己的也是3.7
+d.	PyPy还可以与Python生态系统中的绝大多数工具配合使用，例如用于打包的pip或用于虚拟环境的virtualenv。大多数Python软件包，即使是那些带有C模块的软件包，都会按照原样运行
+e.	感觉后期会经常接触到Numpy，Numpy现在与PyPy兼容的非常好
+f.	PyPy网址：http://pypy.org/
+g.	下载时注意要下载带JIT的版本​​</li>
+<li>对机器学习中分类与聚类概念的理解[机器学习中分类与聚类的本质区别]</li>
+<li>在python爬取相关信息，jieba进行分词以后，可以根据下面的链接教程简单的实现使用K-means算法对中文文本聚类并可视化[使用K-means及TF-IDF算法对中文文本聚类并可视化]</li>
+<li>对于字典的三种遍历方式：
+a.	第一种----------------------------------------------------------------------​​
+b.	第二种-------------------------------------------------------------------------------------------​​
+c.	第三种----------------------------------------------------------------------------------------------​​</li>
+</ol>
  </p>
                       </div>
                   </div>
 
                   <div class="row">
                       <div class="col-md-12 animate-box">
+                          
+                              <div class="next-post">
+                                  <div class="next">下一篇</div>
+                                  <a href="https://zb-tjw.github.io/post/关于">
+                                      <h3 class="post-title">
+                                          关于
+                                      </h3>
+                                  </a>
+                              </div>
                           
                       </div>
                   </div>
