@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+      
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Gridea</title>
@@ -24,6 +24,12 @@
 
 <!-- Comment -->
 
+    
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+    
+
+    
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/tomorrow-night.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
@@ -31,7 +37,7 @@
 
   </head>
   <body>
-    
+  
 <div id="fh5co-offcanvas">
     <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
         <span><i class="icon-cross3"></i> <span>Close</span></span>
@@ -131,36 +137,54 @@
 </header>
 
 
-    <div class="container-fluid">
-      <div class="row fh5co-post-entry">
+<!--  <a href="#" class="fh5co-post-prev"><span>👈 Prev</span></a>-->
+<!--  <a href="#" class="fh5co-post-next"><span>Next 👉</span></a>-->
 
-        
-            <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-xxs-12 animate-box article-box">
-            <figure class="img-box">
-              <a href="https://zb-tjw.github.io/post/关于">
-                
-                  <img src="https://zb-tjw.github.io/post-images/关于.jpg" alt="关于" class="img-responsive">
-                
-              </a>
-            </figure>
-            <span class="fh5co-meta">
-              
-            </span>
-            <h3 class="fh5co-article-title">
-              <a href="https://zb-tjw.github.io/post/关于">关于</a>
-            </h3>
-            <span class="fh5co-meta fh5co-date">2019-01-25</span>
+  <div class="container-fluid">
+      <div class="row fh5co-post-entry single-entry">
+          <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+              <figure class="animate-box">
+                  
+                      <img src="https://zb-tjw.github.io/post-images/关于.jpg" alt="关于" class="img-responsive">
+                  
+              </figure>
+              <span class="fh5co-meta animate-box">
+                  
+              </span>
+              <h2 class="fh5co-article-title animate-box">关于</h2>
+              <span class="fh5co-meta fh5co-date animate-box">2019-01-25</span>
+
+              <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
+                  <div class="row">
+                      <div class="col-md-12 animate-box post-content">
+                          <p> <h1 id="author-by-zb_tjw">Author By zb_tjw</h1>
+<h1 id="qq1549790231">QQ：1549790231</h1>
+ </p>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-12 animate-box">
+                          
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-12 animate-box">
+                          
+                              
+                                  <div id="gitalk-container"></div>
+                              
+
+                              
+                          
+                      </div>
+                  </div>
+              </div>
+
           </article>
-        
-            <div class="clearfix visible-lg-block visible-md-block visible-sm-block visible-xs-block"></div>
-
       </div>
-
-      <div class="pagination-box animate-box">
-        
-        
-      </div>
-    </div>
+  </div>
 
     
 <footer id="fh5co-footer">
@@ -185,6 +209,29 @@
 <script type="application/javascript">
     hljs.initHighlightingOnLoad();
 </script>
+
+
+
+    
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+
+            var gitalk = new Gitalk({
+                clientID: 'f2d74699d9499525a18d',
+                clientSecret: '0d4ca60990794f7f1ca4174bfb03ecb2d8409092',
+                repo: 'zb-tjw.github.io',
+                owner: 'zb-tjw',
+                admin: ['zb-tjw'],
+                id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+                distractionFreeMode: false  // Facebook-like distraction free mode
+            })
+
+            gitalk.render('gitalk-container')
+
+        </script>
+    
+
+    
 
 
 
