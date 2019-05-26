@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>E:/Users/Administrator/Documents/Gridea/output</id>
+    <id>https://zb-tjw.github.io/</id>
     <title>zb_tjw个人博客</title>
-    <updated>2019-05-26T14:36:55.856Z</updated>
+    <updated>2019-05-26T15:00:47.683Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="E:/Users/Administrator/Documents/Gridea/output"/>
-    <link rel="self" href="E:/Users/Administrator/Documents/Gridea/output/atom.xml"/>
+    <link rel="alternate" href="https://zb-tjw.github.io/"/>
+    <link rel="self" href="https://zb-tjw.github.io//atom.xml"/>
     <subtitle>脚踏实地、厚积薄发、广学精用</subtitle>
-    <logo>E:/Users/Administrator/Documents/Gridea/output/images/avatar.png</logo>
-    <icon>E:/Users/Administrator/Documents/Gridea/output/favicon.ico</icon>
+    <logo>https://zb-tjw.github.io//images/avatar.png</logo>
+    <icon>https://zb-tjw.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, zb_tjw个人博客</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>E:/Users/Administrator/Documents/Gridea/output/post/hello-gridea/index.html</id>
-        <link href="E:/Users/Administrator/Documents/Gridea/output/post/hello-gridea/index.html">
+        <title type="html"><![CDATA[关于]]></title>
+        <id>https://zb-tjw.github.io//post/about</id>
+        <link href="https://zb-tjw.github.io//post/about">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></content>
+        <updated>2019-01-25T11:09:48.000Z</updated>
     </entry>
 </feed>
