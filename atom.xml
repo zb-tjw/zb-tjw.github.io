@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zb-tjw.github.io</id>
     <title>zb_tjw</title>
-    <updated>2019-05-27T01:13:54.358Z</updated>
+    <updated>2019-05-27T01:26:40.041Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zb-tjw.github.io"/>
     <link rel="self" href="https://zb-tjw.github.io/atom.xml"/>
@@ -10,6 +10,34 @@
     <logo>https://zb-tjw.github.io/images/avatar.png</logo>
     <icon>https://zb-tjw.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, zb_tjw</rights>
+    <entry>
+        <title type="html"><![CDATA[黑苹果强制关机导致硬盘挂在失败问题]]></title>
+        <id>https://zb-tjw.github.io/post/黑苹果强制关机导致硬盘挂在失败问题</id>
+        <link href="https://zb-tjw.github.io/post/黑苹果强制关机导致硬盘挂在失败问题">
+        </link>
+        <updated>2019-05-27T01:23:47.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[黑苹果活动监视器闪退的解决办法]]></title>
+        <id>https://zb-tjw.github.io/post/黑苹果活动监视器闪退的解决办法</id>
+        <link href="https://zb-tjw.github.io/post/黑苹果活动监视器闪退的解决办法">
+        </link>
+        <updated>2019-05-27T01:22:30.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于Mac系统连接到部分WiFi后能登录QQ却不能上网的问题的解决办法]]></title>
+        <id>https://zb-tjw.github.io/post/关于Mac系统连接到部分WiFi后能登录QQ却不能上网的问题的解决办法</id>
+        <link href="https://zb-tjw.github.io/post/关于Mac系统连接到部分WiFi后能登录QQ却不能上网的问题的解决办法">
+        </link>
+        <updated>2019-05-27T01:19:20.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[离散数学：2018年刑侦科推理试题]]></title>
+        <id>https://zb-tjw.github.io/post/离散数学：2018年刑侦科推理试题</id>
+        <link href="https://zb-tjw.github.io/post/离散数学：2018年刑侦科推理试题">
+        </link>
+        <updated>2019-05-27T01:16:52.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Deepin下安装SS、SSR所学到的知识]]></title>
         <id>https://zb-tjw.github.io/post/Deepin下安装SS、SSR所学到的知识</id>
