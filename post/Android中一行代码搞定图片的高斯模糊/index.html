@@ -155,36 +155,89 @@
           <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
               <figure class="animate-box">
                   
-                      <img src="https://zb-tjw.github.io/post-images/关于.jpg" alt="关于" class="img-responsive">
+                      <img src="https://zb-tjw.github.io/post-images/Android中一行代码搞定图片的高斯模糊.jpg" alt="Android中一行代码搞定图片的高斯模糊" class="img-responsive">
                   
               </figure>
               <span class="fh5co-meta animate-box">
                   
                       <div class="tag-container">
                           
-                              <a href="https://zb-tjw.github.io/tag/elP-jHh6N" class="tag">机器学习, </a>
-                          
                               <a href="https://zb-tjw.github.io/tag/kGn7n5ogV" class="tag">Android, </a>
-                          
-                              <a href="https://zb-tjw.github.io/tag/kMdo9Yqa9" class="tag">学习笔记, </a>
                           
                       </div>
                   
               </span>
-              <h2 class="fh5co-article-title animate-box">关于</h2>
-              <span class="fh5co-meta fh5co-date animate-box">2019-01-25</span>
+              <h2 class="fh5co-article-title animate-box">Android中一行代码搞定图片的高斯模糊</h2>
+              <span class="fh5co-meta fh5co-date animate-box">2019-05-27</span>
 
               <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
                   <div class="row">
                       <div class="col-md-12 animate-box post-content">
-                          <p> <h1 id="author-by-zb_tjw">Author By zb_tjw</h1>
-<h1 id="qq1549790231">QQ：1549790231</h1>
+                          <p> <p>1.之前写过一篇图片设置高斯模糊的<a href="https://blog.csdn.net/qq_32239767/article/details/89528128">文章</a>，鉴于没有在GitHub上找到合适的库，自己就拷贝百度代码做了个小的工具类，今天又花功夫对这个工具类进行了扩充，重载了BoxBlurFilter()方法，使用者可以通过资源文件图片、bitmap、drawable、甚至是直接通过网络图片(已做异步处理，无需再开子线程，直接给个对应的网址就完事)来进行设置。如果觉得用的还好的话，可以去<a href="https://github.com/zb-tjw/BlurImageView">GitHub仓库</a>上给我点个<font color="red"><strong>Star</strong></font>，如果遇到问题，或者bug，请底下回复留言
+2.下边来说一说用法</p>
+<h3 id="how-to">How to</h3>
+<hr>
+<h4 id="1gradle">1.gradle:</h4>
+<p>To get a Git project into your build:
+<strong>Step 1.</strong> Add the JitPack repository to your build file
+Add it in your root build.gradle at the end of repositories:</p>
+<pre><code>allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+</code></pre>
+<p><strong>Step 2.</strong> Add the dependency</p>
+<pre><code>dependencies {
+	        implementation 'com.github.zb-tjw:BlurImageView:2.0'
+	}
+</code></pre>
+<h4 id="2maven">2.maven:</h4>
+<p>To get a Git project into your build:
+<strong>Step 1.</strong> Add the JitPack repository to your build file</p>
+<pre><code>&lt;repositories&gt;
+		&lt;repository&gt;
+		    &lt;id&gt;jitpack.io&lt;/id&gt;
+		    &lt;url&gt;https://jitpack.io&lt;/url&gt;
+		&lt;/repository&gt;
+	&lt;/repositories&gt;
+</code></pre>
+<p><strong>Step 2.</strong> Add the dependency</p>
+<pre><code>&lt;dependency&gt;
+	    &lt;groupId&gt;com.github.zb-tjw&lt;/groupId&gt;
+	    &lt;artifactId&gt;BlurImageView&lt;/artifactId&gt;
+	    &lt;version&gt;2.0&lt;/version&gt;
+	&lt;/dependency&gt;
+</code></pre>
+<p>3.方法调用：</p>
+<ul>
+<li>如果你的参数是bitmap：<br/><code>image.setBackground(BoxBlurFilter(bmp));</code></li>
+<li>如果你的参数是drawable：<br/><code>image.setBackground(BoxBlurFilter(drawable));</code></li>
+<li>如果你的参数是资源文件下的某张图片：<br/><code>image.setBackground(BoxBlurFilter(MainActivity.this,R.mipmap.zb_tjw));</code></li>
+<li>如果你的参数是一个网络图片地址：<br/><code>private String url = &quot;https://img-blog.csdnimg.cn/.........&quot;;</code>
+<code>AsyncloadImage asyncloadImage = new AsyncloadImage();</code>
+<code>asyncloadImage.execute(url,image1);</code><br/><strong>无需再自己开子线程，已做异步处理</strong></li>
+<li>如果你想改高斯模糊的清晰度：<br/><code>BlurImageView.HRADIUS = 1;</code>
+<code>BlurImageView.ITERATIONS= 1;</code>
+<code>BlurImageView.VRADIUS = 1;</code><br/><strong>数值越小越清晰</strong>
+4.欢迎点赞和评论，有问题也可一起交流：<a href="https://github.com/zb-tjw/BlurImageView"><strong>GitHub仓库地址</strong></a></li>
+</ul>
  </p>
                       </div>
                   </div>
 
                   <div class="row">
                       <div class="col-md-12 animate-box">
+                          
+                              <div class="next-post">
+                                  <div class="next">下一篇</div>
+                                  <a href="https://zb-tjw.github.io/post/拖继文第三周周记">
+                                      <h3 class="post-title">
+                                          第三周周记
+                                      </h3>
+                                  </a>
+                              </div>
                           
                       </div>
                   </div>

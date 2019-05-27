@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zb-tjw.github.io</id>
     <title>zb_tjw</title>
-    <updated>2019-05-26T16:48:24.872Z</updated>
+    <updated>2019-05-27T01:00:10.650Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zb-tjw.github.io"/>
     <link rel="self" href="https://zb-tjw.github.io/atom.xml"/>
@@ -11,7 +11,14 @@
     <icon>https://zb-tjw.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, zb_tjw</rights>
     <entry>
-        <title type="html"><![CDATA[拖继文第三周周记]]></title>
+        <title type="html"><![CDATA[Android中一行代码搞定图片的高斯模糊]]></title>
+        <id>https://zb-tjw.github.io/post/Android中一行代码搞定图片的高斯模糊</id>
+        <link href="https://zb-tjw.github.io/post/Android中一行代码搞定图片的高斯模糊">
+        </link>
+        <updated>2019-05-27T00:56:51.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[第三周周记]]></title>
         <id>https://zb-tjw.github.io/post/拖继文第三周周记</id>
         <link href="https://zb-tjw.github.io/post/拖继文第三周周记">
         </link>
