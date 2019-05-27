@@ -155,60 +155,41 @@
           <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
               <figure class="animate-box">
                   
-                      <img src="https://zb-tjw.github.io/post-images/拖继文第三周周记.jpg" alt="第三周周记" class="img-responsive">
+                      <img src="https://zb-tjw.github.io/post-images/Deepin下安装SS、SSR所学到的知识.jpg" alt="Deepin下安装SS、SSR所学到的知识" class="img-responsive">
                   
               </figure>
               <span class="fh5co-meta animate-box">
                   
                       <div class="tag-container">
                           
-                              <a href="https://zb-tjw.github.io/tag/elP-jHh6N" class="tag">机器学习, </a>
-                          
                               <a href="https://zb-tjw.github.io/tag/kMdo9Yqa9" class="tag">学习笔记, </a>
                           
                       </div>
                   
               </span>
-              <h2 class="fh5co-article-title animate-box">第三周周记</h2>
+              <h2 class="fh5co-article-title animate-box">Deepin下安装SS、SSR所学到的知识</h2>
               <span class="fh5co-meta fh5co-date animate-box">2019-05-27</span>
 
               <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
                   <div class="row">
                       <div class="col-md-12 animate-box post-content">
                           <p> <ol>
-<li>3.5.2节BP算法的问题中提到：深度结构（涉及多个非线性处理单元层）<font color=	#1E90FF><strong>非凸目标函数</strong></font>中普标存在的<font color=	#1E90FF><strong>局部最小</strong></font>是训练困难的主要来源
+<li>关于墙的问题，感觉最好是自己买个服务器，然后百度搜<strong>秋水逸冰</strong>，然后配置好，然后下载个Shadowsocks去使用，Mac、Linux去下相应的版本就好，而且大佬说SSR以及不维护了，现在最好用SS，秋水逸冰的博客也是写的SS</li>
+<li>Linux下的最好是用<a href="https://github.com/shadowsocks/shadowsocks-qt5">shadowsocks-qt5</a>，这个只支持SS，可以在Deepin的应用商店里下载，但是版本较老，没有我想要的加密方式，所以可以去github下载最新的版本,直接下载.AppImage文件即可，双击按提示给权限然后打开就好了，如果是命令行的话,执行如下命令即可：<br/><code>chmod a+x Shadowsocks-Qt5-x86_64.AppImage</code><br/><code>./Shadowsocks-Qt5-x86_64.AppImage</code><img src="https://img-blog.csdnimg.cn/20190512185653199.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>关于权限问题，我用的服务器是舍友的，有SS也有SSR，最开始我尝试过安装SSR，网上找到两个帖子，但是都没有GUI界面，所以感觉用起来比较麻烦，其中有一个是自己下载脚本自己安装，脚本在github上，我在本地新建了.sh文件把脚本内容放到了里边，但是运行的时候也是报错，原因在于<code>.sh文件就是文本文件，如果要执行，需要使用chmod a+x xxx.sh来给可执行权限</code><br/><code>编译 chmod +x filename 这样才能用./filename 来运行</code></li>
+<li>第三条中提的到两个链接分别如下，但是看github的提交时间，仓库比较久远了<br/><code>https://github.com/ginnerpeace/environment/blob/master/bash/ssr.sh</code><br/><code>https://github.com/shadowsocksr-backup/shadowsocksr</code></li>
+<li>关于SSR现在的话有个github库叫<a href="https://github.com/erguotou520/electron-ssr">electron-ssr</a>，这个有GUI界面，而且Windows、Mac、Linux都有相应版本，但是下载了试了试，在我的Deepin下全局直接无法使用，Mac上的话一般般，相对于Shadowsocks占用内存比较大</li>
+<li>下面来讲讲代理，我也是今天才跟大佬搞明白了一点，以前虽然也早会在win、Mac、Linux下的墙，也自己买过国外服务器配置过自己的服务器，但是根本没搞明白到底是怎么翻的，这里记录一下</li>
+<li>首先<br/>可以看到分为<strong>PAC</strong>和<strong>全局</strong>模式，以前都是自己弄个服务器，然后下载个Shadowsocks就直接可以用了，一直都是全局模式，没有搞明白为什么要全局模式下运行，但是今天我有了舍友的服务器配置信息，也下载了qt5，但是还是没有墙成功，一直很不解，然后大佬帮我解释了一下，才稍微明白了，下面慢慢解释<img src="https://img-blog.csdnimg.cn/20190512191925647.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>首先大佬有教育了一套墙套路，<strong><a href="https://blog.csdn.net/fhonour/article/details/80954049">Chrome+SwitchyOmega+Shadowsocks</a></strong>，没听说过的也可以自己百度查看具体是什么，我看CSDN上很多教程，但是这里的话有个问题，就是如果你不先墙，可能没法登录谷歌应用商店，所以可能没法下载安装<strong>SwitchyOmega</strong>，这里我也考虑到了，那就是离线安装插件，<code>登陆github，搜索SwitchyOmega，把下载好的crx文件拖放到Chrome里面，完成安装即可</code>，github现在我看不墙也能访问</li>
+<li>SwitchyOmega是谷歌浏览器的插件，那么肯定要用到谷歌浏览器，但是同时还需要配合Shadowsocks，就是这里让我明白了什么是代理，配置方法如下
 <ol>
-<li>两个侧重点非凸目标函数、局部最小值，关于函数的问题，就是数学上的定义，分三类（凸函数，凹函数，非凸非凹函数）</li>
-<li>最小值问题，不管在哪篇博客里，总会出现一句话：<font color=	#1E90FF><strong>误差局面可能含有多个不同的局部极小值，</strong></font>梯度下降可能导致陷入局部最小值，书中在下一段也提到<font color=	#1E90FF><strong>非凸目标函数导致求解陷入局部最优</strong></font><img src="https://img-blog.csdnimg.cn/20190527005313963.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
-<li>另外关于sigmoid函数的凹凸性我感觉下边这个图比课本上的图看着舒服很多<img src="https://img-blog.csdnimg.cn/20190527005350594.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
-<li>在百度搜非凸目标函数，很多有关于凸优化和非凸优化的文章，里边除了目标函数为凸函数以外还提到了定义域为凸集的问题，感觉还看不到这么深，先记录一下<a href="https://blog.csdn.net/u012205243/article/details/42301113">链接一</a>、<a href="http://wenda.chinahadoop.cn/question/4469">链接二</a></li>
-</ol>
-</li>
-<li>关于BP算法，书中只是提到<font color=	#1E90FF><strong>反向传播，修正权值</strong>，</font>但是会不会考虑这么一个问题：在讨论BP算法问题时突然提到了非凸目标函数的局部最小值问题，那么BP算法中使用的到底是哪个函数？，推荐一个写的很不错的文章<a href="https://www.cnblogs.com/liuwu265/p/4696388.html">多层神经网络BP算法 原理及推导</a></li>
-<li>关于BP算法存在的问题（3）中提到<font color=	#1E90FF><strong>我们只能用有标签的数据来训练；大部分数据是没有标签的，</strong></font>那么这里所说的标签是怎样的标签？4.1.4节给出另一句话<font color=	#1E90FF><strong>在有监督的学习方法里，我们给定了一组输入数据，给定了数据的答案，或者叫标签</strong></font></li>
-<li>书中提到了SVN支持向量机，自己稍微了解了一下，几乎看不懂，就弄明白了一个词--<font color=	#1E90FF><strong>超平面</strong></font>（如果一个线性函数能够将样本分开，称这些数据样本是线性可分的。那么什么是线性函数呢？其实很简单，在二维空间中就是一条直线，在三维空间中就是一个平面，以此类推，如果不考虑空间维数，这样的线性函数统称为超平面）<a href="https://blog.csdn.net/sinat_20177327/article/details/79729551">支持向量机（SVM）入门理解与推导</a></li>
-<li>深度学习训练的具体过程（1）使用自下而上的非监督学习，但是可有标定数据，<font color=	red><strong>这里如果有了标定数据，那是否意味着就变成了监督学习？</strong></font></li>
-<li><font color=	red><strong>课本88页图的描述自下而上不应该是正向吗，为什么是反向监督学习，自顶向下的微调才是反向吧？</strong></font></li>
-<li>课本91页提到：<font color=	#1E90FF><strong>通常隐层中的神经元数目要比输入\输出层少，这是为了使神经网络只学习最重要的特征并实现特征的降维，</strong></font>关于降维书中接着讲了把4bit的信息用2bit表示，利用压缩方法使输入的数据降维，变成隐层的东西，这个我基本明白了，网上的降维方法很多，但是难度都比书上的难很多，另外关于这句话回想之前第二章的内容就会发现，关于神经元的数目问题，还有另外一句话（课本62页）：<font color=	#1E90FF><strong>多层感知机起码具备一个隐层，但隐层的神经元数量是多少呢？这里有个大致的推理公式：2n+1，n是输入单元的个数，</strong></font><font color=	red><strong>两句话字面意思都很好理解，但是放到一起去看，又该怎么去理解，按字面意思来的话明显是冲突的啊？</strong></font></li>
-<li>4.1.1灰度图像中间有句话：<strong>每一个隐层就是特征的提取（反向提取特征），最上层，也就是输入层也是一种维度的特征</strong>，<font color=	red><strong>这不应该是正向吗？而且最上层不应该是输出层吗？</strong></font></li>
-<li>课外的文章：<a href="https://mp.weixin.qq.com/s/DKno1snzrvOivYjtDPokAg">让Python代码运行更快的最佳方式</a>，可以自己去读，也可以看一下几点总结
-<ol>
-<li>PyPy是python的一种解释器，比标准的cPython快很多，不过并不支持所有cPython库</li>
-<li>PyPy比python快的原因是有JIT（实时编译），可以动态编译</li>
-<li>PyPy支持python2和python3，但是python2马上要被废弃，python3的话目前只支持3.5和3.6，目前最新是3.7，自己的也是3.7</li>
-<li>PyPy还可以与Python生态系统中的绝大多数工具配合使用，例如用于打包的pip或用于虚拟环境的virtualenv。大多数Python软件包，即使是那些带有C模块的软件包，都会按照原样运行</li>
-<li>感觉后期会经常接触到Numpy，Numpy现在与PyPy兼容的非常好</li>
-<li>PyPy网址：http://pypy.org/</li>
-<li>下载时注意要下载带JIT的版本<img src="https://img-blog.csdnimg.cn/20190527085108633.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
-</ol>
-</li>
-<li>对机器学习中分类与聚类概念的理解<a href="https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80353640">机器学习中分类与聚类的本质区别</a></li>
-<li>在python爬取相关信息，jieba进行分词以后，可以根据下面的链接教程简单的实现使用K-means算法对中文文本聚类并可视化<a href="https://www.jianshu.com/p/622222b96f76">使用K-means及TF-IDF算法对中文文本聚类并可视化</a></li>
-<li>对于字典的三种遍历方式：
-<ol>
-<li>第一种-------------------------------------------------------------------------------------------------<img src="https://img-blog.csdnimg.cn/20190527085340351.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
-<li>第二种-------------------------------------------------------------------------------------------------<img src="https://img-blog.csdnimg.cn/20190527085411202.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
-<li>第三种--------------------------------------------------------------------------------------------------<img src="https://img-blog.csdnimg.cn/20190527085452421.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>首先下载安装好Chrome+SwitchyOmega+Shadowsocks</li>
+<li>这里配置插件吧，配置图如下,当时我的第一疑问是代理服务器为什么不写自己国外服务器的地址而是写127.0.0.1呢，学计算机的肯定知道127.0.01就是自己本机，这里先这么配置，后边会解释为什么，代理是怎么走的，端口的话随便写，但是要和Shadowsocks中的端口对应起来<br/><img src="https://img-blog.csdnimg.cn/2019051219383242.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>将自己的服务器信息配置到Shadowsocks中,看到图中的方框内的数据了吗，要和插件里的一样哦<br/><img src="https://img-blog.csdnimg.cn/20190512194329100.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>下面说说为什么这么写，首先举一个例子，你现在要访问谷歌，如果你配置好了那么你的请求是这么走的，首先从本机这个插件的1082端口去到Shadowsocks的1082端口，再由Shadowsocks去连接到你的国外服务器，然后国外服务器访问谷歌网站成功，可能描述的不准确，但是可以先这么理解</li>
+<li>那么为什么以前在Mac和Windows上就没有这么麻烦的去配置呢，因为在Mac和Windows上一直是全局模式，全局模式可以理解为所有的数据都走了国外服务器</li>
+<li>写这个博客的时候我的问题又来了，举例：百度不被墙，但是谷歌被墙，访问谷歌的时候走插件-&gt;Shadowsocks这个方式，那么访问百度呢，还会通过1082端口走代理吗？答案是不走，只有符合代理规则的才走,默认是直连，符合规则的才走代理<br/><img src="https://img-blog.csdnimg.cn/20190512204654928.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
 </ol>
 </li>
 </ol>
@@ -221,9 +202,9 @@
                           
                               <div class="next-post">
                                   <div class="next">下一篇</div>
-                                  <a href="https://zb-tjw.github.io/post/关于">
+                                  <a href="https://zb-tjw.github.io/post/Android中一行代码搞定图片的高斯模糊">
                                       <h3 class="post-title">
-                                          关于
+                                          Android中一行代码搞定图片的高斯模糊
                                       </h3>
                                   </a>
                               </div>
