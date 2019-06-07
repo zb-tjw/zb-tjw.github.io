@@ -159,26 +159,51 @@
           <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
               <figure class="animate-box">
                   
-                      <img src="https://zb-tjw.github.io/post-images/关于.jpg" alt="关于" class="img-responsive">
+                      <img src="https://zb-tjw.github.io/post-images/windows下安装owncloud.png" alt="windows下安装owncloud" class="img-responsive">
                   
               </figure>
               <span class="fh5co-meta animate-box">
                   
+                      <div class="tag-container">
+                          
+                              <a href="https://zb-tjw.github.io/tag/4myzJnRHZ" class="tag">程序人生, </a>
+                          
+                      </div>
+                  
               </span>
-              <h2 class="fh5co-article-title animate-box">关于</h2>
-              <span class="fh5co-meta fh5co-date animate-box">2019-01-25</span>
+              <h2 class="fh5co-article-title animate-box">windows下安装owncloud</h2>
+              <span class="fh5co-meta fh5co-date animate-box">2019-06-07</span>
 
               <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
                   <div class="row">
                       <div class="col-md-12 animate-box post-content">
-                          <p> <h1 id="author-by-zb_tjw">Author By zb_tjw</h1>
-<h1 id="qq1549790231">QQ：1549790231</h1>
+                          <p> <ol>
+<li>自己没事在Windows上搭建了一个私有云，聊聊搭建过程中的一些坑，Linux和Mac下的搭建等有时间再搞</li>
+<li>参照的教程:<a href="https://jingyan.baidu.com/article/eae07827798a661fec54850f.html"><strong>windows下用owncloud搭建私有云</strong></a>,找了不少教程，就这个比较详细，但是很多坑并没有指出</li>
+<li>首先Wampserver一定要安装完整版，这里我提供一个<a href="https://sourceforge.net/projects/wampserver/files/"><strong>链接</strong></a></li>
+<li>按照教程走的时候可能会安装失败，出现下面两个图片的情况<img src="https://img-blog.csdnimg.cn/20190607163907636.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20190607163918495.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">第一张图是说ownCloud不支持Windows，这因为在8.0.16之后的版本不再支持Windows了，可以下载8.0.16之前的版本，包括8.0.16，第二张图是PHP版本和owncloud版本不兼容，去Wampserver下更改PHP版本即可，版版本调低</li>
+<li>按照第二条的教程走完可保证自己的电脑能访问搭建的私有云，流程也很简单，教程都讲得很清楚了。但是如果只是在自己的电脑上访问，说实在的还不如不搭建，所以我们起码要能在局域网中访问这个私有云，当然如果你的Windows是主机或者本身就是在VPS上搭建的，那么就要让它能够外网访问才行</li>
+<li>关于允许局域网访问，除了修改Apache的配置文件外(自己百度，教程很多)，<strong><font color="#00CED1">一定要记得把自己电脑的防火墙关闭！！！</strong></font>,然后手机访问IP/owncloud即可<img src="https://img-blog.csdnimg.cn/20190607163719293.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>另外说到手机通过浏览器访问了，可以下载客户端，Windows上也可以下载一个客户端,用法都一样，都是写个IP，输入账户名和密码，这里放Google应用商店的图是提醒大家，<strong>不要去官网扫描二维码下载Android端的应用，收费而且需要翻墙，直接百度就好了</strong><img src="https://img-blog.csdnimg.cn/20190607164401352.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br/><img src="https://img-blog.csdnimg.cn/20190607164417823.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>如果遇上下边图片的问题，解决办法就在下边的图片里写着<img src="https://img-blog.csdnimg.cn/20190607164712432.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20190607164822815.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>如果遇到文件不能删除的情况，在浏览器点击删除刷新后文件又恢复，本地客户端也会因为这个文件而同步失败，那么最好的办法就是去硬盘的文件夹里删掉那个文件，一个文件夹对应一个账户，每个账户都有自己的独立空间<img src="https://img-blog.csdnimg.cn/20190607165044584.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20190607165059864.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>剩下的一些细节问题就自己去体验吧，比如更改文件最大体积的限制，电脑网页可直接在线播放mp4格式的电影，但是手机客户端(我用的2.1.2，我看还有2.4)是先下载再观看<img src="https://img-blog.csdnimg.cn/20190607165423182.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMjM5NzY3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+</ol>
  </p>
                       </div>
                   </div>
 
                   <div class="row">
                       <div class="col-md-12 animate-box">
+                          
+                              <div class="next-post">
+                                  <div class="next">下一篇</div>
+                                  <a href="https://zb-tjw.github.io/post/黑苹果强制关机导致硬盘挂在失败问题">
+                                      <h3 class="post-title">
+                                          黑苹果强制关机导致硬盘挂在失败问题
+                                      </h3>
+                                  </a>
+                              </div>
                           
                       </div>
                   </div>
